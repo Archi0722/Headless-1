@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Headless Alm</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel=" stylesheet" href="dashboard.css" />
+    <link rel=" Login" href="https://learningmanager.adobe.com/unacademy1" />
+    <link rel=" signin" href="https://learningmanager.adobe.com/" />
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+  </head>
+  <body>
+    <div id="main" class="main-container">
+      <header class="header-container">
+        <div class="box-11">
+
+          <div class="ham-menu-div">  
+            <div>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                <i class="fa-solid fa-bars ham-menu"></i>
+              </span>
+            </div>
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <!-- <img
+                src="client_logo.png"
+                alt="No Image found"
+                height="30px"
+                width="80px"
+              /> -->
+                &times;</a>
+              <a href="#">Home</a>
+              <a href="#">My Learnings</a>
+              <a href="#">Catalogs</a>
+              <a href="#">Social Learning</a>
+              <a href="#">Recommandations</a>
+              <a href="#">Badges</a>
+              <a href="#">Leaderboard</a>
+            </div>
+          </div>
+          <div class="logo">
+            <img
+              src="client_logo.png"
+              alt="No Image found"
+              height="50px"
+              width="150px"
+            />
+          </div>
+        </div>
+
+        <div class="box-12">
+          <div class="header-icon-1">
+            <i class="fa-regular fa-bell"></i>
+          </div>
+          <div class="header-icon-2">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <div class="header-icon-3">
+            <i class="fa-regular fa-id-badge"></i>
+          </div>
+          <div class="my-profile">
+            <div>
+              <span>Archi Jain</span>
+            </div>
+            <div class="dropdown">
+              <i class="fa-solid fa-angle-down" style="font-size: 20px"></i>
+              <div class="dropdown-content">
+                <ul>
+                  <li><a href="https://learningmanager.adobe.com/unacademy1">Login</a></li>
+                  <li><a href="https://learningmanager.adobe.com/">Signup</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="section-container">
+        <div class="page-head">
+          <h1><strong>Analytics</strong> Dashboard</h1>
+          <hr style="background-color: red; width: 95%; margin: 0px" />
+        </div>
+        <div class="section-block">
+          <div class="section-block-box-1">
+            <div>box A</div>
+            <div>box B</div>
+            <div>box C</div>
+            <div>box D</div>
+          </div>
+          <div class="section-block-box-2">
+            <div>box E</div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer-container">Footer</footer>
+    </div>
+  </body>
+</html>
