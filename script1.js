@@ -6,7 +6,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
     const password = document.getElementById('password').value;
     const passwordError = document.getElementById('passwordError');
 
-    // Password validation
+    // Password check
     const passwordRegex = /^(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
     if (!passwordRegex.test(password)) {
         passwordError.style.display = 'block';
@@ -15,7 +15,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
         passwordError.style.display = 'none';
     }
 
-    // API Call Simulation
+    // API Call
     async function generateAuthToken(username, password) {
         const apiEndpoint = 'https://learningmanager.adobe.com/oauth/o/authorize';  // Replace with your API endpoint
         const clientId = '<7594583f-8b95-4a67-aaca-a4bb24adf7bf>';
@@ -24,7 +24,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
     
         try {
             const response = await fetch(apiEndpoint, {
-                method: 'POST',
+                method: 'GET',
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
@@ -105,4 +105,4 @@ document.getElementById('signupForm').addEventListener('submit', async function(
     } catch (error) {
         alert('Sign Up failed. Please try again.');
     }
-});
+})
